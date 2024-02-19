@@ -1,6 +1,7 @@
 /****************************************************************************
  *
- * This demo showcases how to simply advertise a ble packet. It can send adv data, be connected by client.
+ * This demo showcases how to simply advertise a ble packet . It can send adv data, be connected by client.
+ * Write two numbers using gatt services and write a gatt service to read sum.
  * This will connect to ble client (moblie app) this will not require any pin.
  * BLE client can connect to LightBlue app from google play store. This is tested for android only.
  *
@@ -109,7 +110,6 @@ uint16_t gatt_char_declare_uuid = ESP_GATT_UUID_CHAR_DECLARE;
 uint16_t num_first_declare_value = (ESP_GATT_CHAR_PROP_BIT_WRITE | ESP_GATT_CHAR_PROP_BIT_READ);
 /** @brief This variable stores the password declare value */
 uint16_t num_second_declare_value = (ESP_GATT_CHAR_PROP_BIT_WRITE | ESP_GATT_CHAR_PROP_BIT_READ);
-
 /** @brief This variable stores the WiFi onboard status declare value */
 uint16_t sum_declare_value = ESP_GATT_CHAR_PROP_BIT_READ;
 
